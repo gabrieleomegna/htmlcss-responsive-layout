@@ -11,18 +11,19 @@ body {
 .border-test {
     border: 1px dashed black;
 }
-.size-test {
 
+/*****   CLASS CONTAINER  *******/
+.container {
+    padding: 3rem;
 }
 
 /*****  HEADER   *******/
+header {
+    background-color: rgb(0, 132, 253);
+}
 header nav {
     height: 50px;
     width: 100px;
-}
-/*****   CLASS CONTAINER  *******/
-.container {
-    padding: 2rem;
 }
 .flex-between {
     display: flex;
@@ -37,13 +38,14 @@ header nav {
 .jumbo-box {
     width: 100%;
     height: 500px;
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(181, 221, 255);
 }
 /**** Strategic planning section ****/
 .str-plan-box {
     width: 100%;
     height: 500px;
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 .bg-violet {
     background-color: rgb(151, 146, 228);
@@ -52,17 +54,17 @@ header nav {
 .tstm-box {
     width: 100%;
     height: 500px;
-    margin-top: 2.5rem;
+    margin-bottom: 2rem;
     background-color: rgb(151, 146, 228);
 }
-#bg-white {
+.bg-white {
     background-color: white;
 }
 /****  Benefits section  ****/
 .bnf-box {
     width: 100%;
     height: 500px;
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     background-color: white;
 }
 #bnf-title {
@@ -73,5 +75,47 @@ header nav {
 .abu-box {
     width: 100%;
     height: 500px;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/********    FOOTER    ********/
+.height-test {
+    height: 650px;
+}
+
+
+
+/*******   LAYOUT TABLET   *******/
+@media all and (min-width: 480px) {
+    /*****   Jumbotron   *****/
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .jumbotron .container {
+        padding-left: 2rem;
+    }
+    main .jumbo-box {
+        width: calc((100% / 3) - 1rem);
+        margin-left: 1rem;
+    }
+    main #double-width {
+        width: calc(((100% / 3) * 2) - 1rem) ;
+    }
+    /*****   Benefits section   *****/
+    .bnf-box {
+        width: calc((100% / 3) - 1rem);
+        margin-left: 1rem;
+    }
+    .benefits .container {
+        padding-left: 2rem;
+    }
+    /****   About us section  ****/
+    .about-us .abu-box:first-child {
+        width: calc(60% - 1rem);
+    }
+    .about-us .abu-box:nth-child(2) {
+        width: calc(40% - 1rem);
+        margin-left: 1rem;
+    } 
 }
