@@ -118,4 +118,15 @@ header nav {
         width: calc(40% - 1rem);
         margin-left: 1rem;
     } 
+    /****   FOOTER   ****/
+    footer .container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media all and (min-width: 780px) {
+    .container{
+        padding: 0;
+    }
 }
