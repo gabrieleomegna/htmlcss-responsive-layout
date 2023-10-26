@@ -104,7 +104,7 @@ header nav {
     }
     /*****   Benefits section   *****/
     .bnf-box {
-        width: calc((100% / 3) - 1rem);
+        width: calc((100% / 2) - 1rem);
         margin-left: 1rem;
     }
     .benefits .container {
@@ -115,7 +115,7 @@ header nav {
         width: calc(60% - 1rem);
     }
     .about-us .abu-box:nth-child(2) {
-        width: calc(40% - 1rem);
+        width: 40%;
         margin-left: 1rem;
     } 
     /****   FOOTER   ****/
@@ -126,7 +126,23 @@ header nav {
     }
 }
 @media all and (min-width: 780px) {
-    .container{
-        padding: 0;
+    .container,
+    .jumbotron .container,
+    .benefits .container{
+        padding: 3rem 0;
+        justify-content: space-between;
+    }
+    .common-size {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .diff-size {
+        width: 40%;
+        margin: 0 auto;
+    }
+    main .jumbo-box,
+    .bnf-box,
+    .about-us .abu-box:nth-child(2) {
+        margin-left: 0;
     }
 }
